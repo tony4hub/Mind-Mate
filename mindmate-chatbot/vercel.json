@@ -1,0 +1,13 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "installCommand": "npm install",
+  "env": {
+    "AI_PROVIDER": "groq",
+    "AI_MAX_TOKENS": "500",
+    "AI_TEMPERATURE": "0.7",
+    "MAX_CONTEXT_MESSAGES": "10",
+    "GROQ_MODEL": "llama3-8b-8192"
+  }
+}

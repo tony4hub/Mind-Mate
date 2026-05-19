@@ -1,0 +1,8 @@
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <rect width="16" height="16" fill="#B4D4E1" rx="3.2"/>
+  <circle cx="8" cy="5.6" r="2.4" fill="white" opacity="0.9"/>
+  <path d="M 4 9.6 Q 8 12.8 12 9.6" 
+        stroke="white" stroke-width="0.8" fill="none" stroke-linecap="round" opacity="0.9"/>
+  <text x="8" y="14.4" text-anchor="middle" fill="white" 
+        font-family="Arial, sans-serif" font-size="1.6" opacity="0.7">MindMate</text>
+</svg>

@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F5F5F5;
+  --foreground: #4A4A4A;
+}
+
+@theme inline {
+  /* Custom MindMate color palette */
+  --color-soft-gray: #F5F5F5;
+  --color-soft-cream: #FAF9F6;
+  --color-pastel-blue: #B4D4E1;
+  --color-mint-green: #D4E8D4;
+  --color-warm-sand: #E8DCC4;
+  --color-soft-red: #F4A5A5;
+  --color-dark-gray: #4A4A4A;
+  --color-medium-gray: #6B6B6B;
+  
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  
+  /* Custom border radius */
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-3xl: 28px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Dark mode styles */
+.dark {
+  --background: #1a1a1a;
+  --foreground: #e5e5e5;
+  --color-soft-gray: #2a2a2a;
+  --color-soft-cream: #252525;
+  --color-pastel-blue: #5a8a9a;
+  --color-mint-green: #6a8a6a;
+  --color-warm-sand: #8a7a5a;
+  --color-soft-red: #a66a6a;
+  --color-dark-gray: #e5e5e5;
+  --color-medium-gray: #b5b5b5;
+}
+
+.dark body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Accessibility: Focus indicators */
+*:focus-visible {
+  outline: 2px solid #B4D4E1;
+  outline-offset: 2px;
+}
+
+/* Accessibility: Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Animation for message fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Pulse animation for crisis alerts */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Voice wave animation */
+@keyframes voiceWave {
+  0%, 100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-voice-wave {
+  animation: voiceWave 0.8s ease-in-out infinite;
+}
