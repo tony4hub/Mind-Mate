@@ -113,13 +113,6 @@ MindMate follows three core principles:
 - Respects `prefers-reduced-motion` for animations
 - Screen reader announcements for dynamic content
 
-## Browser Support
-
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
 ## License
 
 This project is for demonstration purposes.
